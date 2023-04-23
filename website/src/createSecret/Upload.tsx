@@ -17,7 +17,7 @@ import { useForm } from 'react-hook-form';
 import { Grid, Typography } from '@mui/material';
 
 const Upload = () => {
-  const maxSize = 1024 * 500;
+  const maxSize = 1024 * 1024 * 1000; // 10MB
   const [error, setError] = useState('');
   const { t } = useTranslation();
   const [result, setResult] = useState({
